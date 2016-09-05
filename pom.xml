@@ -6,14 +6,29 @@
 	<packaging>war</packaging>
 	<name>MisPorlets Portlet</name>
 	<version>1.0.0</version>
+	<properties>
+		<liferay.version>6.2.2</liferay.version>
+	</properties>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>com.liferay.maven.plugins</groupId>
 				<artifactId>liferay-maven-plugin</artifactId>
-				<version>6.2.2</version>
+				<version>${liferay.maven.plugin.version}</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>build-css</goal>
+						</goals>
+					</execution>
+				</executions>
 				<configuration>
-					<liferayVersion>6.2.2</liferayVersion>
+					<autoDeployDir>${liferay.auto.deploy.dir}</autoDeployDir>
+					<appServerDeployDir>${liferay.app.server.deploy.dir}</appServerDeployDir>
+					<appServerLibGlobalDir>${liferay.app.server.lib.global.dir}</appServerLibGlobalDir>
+					<appServerPortalDir>${liferay.app.server.portal.dir}</appServerPortalDir>
+					<liferayVersion>${liferay.version}</liferayVersion>
 					<pluginType>portlet</pluginType>
 				</configuration>
 			</plugin>
