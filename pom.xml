@@ -6,9 +6,6 @@
 	<packaging>war</packaging>
 	<name>MisPorlets Portlet</name>
 	<version>1.0.0</version>
-	<properties>
-		<liferay.version>6.2.2</liferay.version>
-	</properties>
 	<build>
 		<plugins>
 			<plugin>
