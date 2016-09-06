@@ -5,6 +5,7 @@
 		<portlet-name>ejercicio01</portlet-name>
 		<icon>/img/icon.png</icon>
 		<instanceable>true</instanceable>
+		<remoteable>true</remoteable>
 		<header-portlet-css>/css/main.css</header-portlet-css>
 		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
 		<css-class-wrapper>ejercicio01-portlet</css-class-wrapper>
